@@ -10,8 +10,9 @@ import { setContext } from '@apollo/client/link/context';
 
 import Home from './pages/Home';
 import ProductList from './pages/ProductList';
-import ServiceList from './pages/ServiceList';
 import Detail from './pages/Detail';
+import ServiceList from './pages/ServiceList';
+import ServiceDetail from './ServiceDetail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -55,6 +56,7 @@ function App() {
 							<Route path="/productList" element={<ProductList />} />
 							<Route path="/products/:id" element={<Detail />} />
 							<Route path="/serviceList" element={<ServiceList />} />
+							<Route path="/services/:id" element={<ServiceDetail />} />
 							<Route path="*" element={<NoMatch />} />
 						</Routes>
 					</StoreProvider>
