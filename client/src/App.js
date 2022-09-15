@@ -12,7 +12,7 @@ import Home from './pages/Home';
 import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail';
 import ServiceList from './pages/ServiceList';
-import ServiceDetail from './ServiceDetail';
+import ServiceDetail from './pages/ServiceDetail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
