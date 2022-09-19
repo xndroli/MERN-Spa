@@ -1,5 +1,5 @@
 import React from 'react';
-import ServiceList from '../components/ServiceList';
+//import ServiceList from '../components/ServiceList';
 import CategoryMenu from '../components/CategoryMenu';
 import Cart from '../components/Cart';
 
