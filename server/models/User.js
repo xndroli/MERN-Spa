@@ -53,6 +53,6 @@ const userSchema = new Schema({
 //   return await bcrypt.compare(password, this.password);
 // };
 
-// const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
 
-// module.exports = User;
+module.exports = User;
