@@ -38,8 +38,10 @@ const resolvers = {
 					$regex: name,
 				};
 			}
+			const services = await Service.find(params).populate('category');
+			console.log(services);
 
-			return await Service.find(params).populate('category');
+			return services;
 		},
 		service: async (parent, { _id }) => {
 			return await Service.findById(_id).populate('category');

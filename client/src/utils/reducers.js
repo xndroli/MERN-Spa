@@ -21,6 +21,7 @@ export const reducer = (state, action) => {
 			};
 
 		case UPDATE_SERVICES:
+			console.log('action', action);
 			return {
 				...state,
 				services: [...action.services],
