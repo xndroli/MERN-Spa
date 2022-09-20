@@ -116,9 +116,10 @@ db.once('open', async () => {
 
 	await User.deleteMany();
 	await User.create({
+		username: 'PamWash',
 		firstName: 'Pamela',
 		lastName: 'Washington',
-		email: 'pamela@testmail.com',
+		email: 'pamela@realmail.com',
 		password: 'password12345',
 		orders: [
 			{
@@ -128,15 +129,17 @@ db.once('open', async () => {
 	});
 
 	await User.create({
+		username: 'PamWash2',
 		firstName: 'Elijah',
 		lastName: 'Holt',
-		email: 'eholt@testmail.com',
+		email: 'eholt@fakemail.com',
 		password: 'password12345',
 	});
 
 	console.log('users seeded');
 
 	await User.create({
+		username: 'PamWash3',
 		firstName: 'Pamela',
 		lastName: 'Washington',
 		email: 'pamela@testmail.com',
@@ -150,6 +153,7 @@ db.once('open', async () => {
 	});
 
 	await User.create({
+		username: 'PamWash4',
 		firstName: 'Elijah',
 		lastName: 'Holt',
 		email: 'eholt@testmail.com',
