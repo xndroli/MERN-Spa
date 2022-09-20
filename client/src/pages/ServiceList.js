@@ -3,7 +3,7 @@ import ServiceList from '../components/ServiceList';
 import CategoryMenu from '../components/CategoryMenu';
 import Cart from '../components/Cart';
 
-const ServiceList = () => {
+const ServList = () => {
 	return (
 		<div className="container">
 			<CategoryMenu />
@@ -13,4 +13,4 @@ const ServiceList = () => {
 	);
 };
 
-export default ServiceList;
+export default ServList;

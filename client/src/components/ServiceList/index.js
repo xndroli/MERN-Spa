@@ -15,6 +15,7 @@ function ServiceList() {
 	const { loading, data } = useQuery(QUERY_SERVICES);
 
 	useEffect(() => {
+		console.log('data is here', data);
 		if (data) {
 			dispatch({
 				type: UPDATE_SERVICES,
