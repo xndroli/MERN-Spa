@@ -238,6 +238,9 @@ input:focus {
 }
 
 .card {
+  background-color: var(--primary);
+  padding: 20px;
+  margin: 10px;
   width: 25%;
   text-align: center;
 }
