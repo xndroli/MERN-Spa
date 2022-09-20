@@ -21,6 +21,10 @@ Website and Repository can be found at:
 - [Website](herokusite.com)
 - [GitHub](https://github.com/xndroli/MERN-Spa.git)
 
+## Presentation
+
+- [Presentation](https://docs.google.com/presentation/d/1kofkwGUMe4LGkXOpG_4CXkBaLredQEwytVI74SukCiE/edit?usp=sharing)
+
 ## Screenshot of Site:
 
 ![MERN-SPA](screenshot.png)
