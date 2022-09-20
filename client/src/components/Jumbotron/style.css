@@ -1,7 +1,37 @@
+:root {
+  --primary: #8ca2bd;
+  --secondary: #ffed68;
+  --tertiary: #B12704;
+  --light: #fafafa;
+  --dark: #272f32;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+}
+
 .jumbotron {
-    width: 500px;
-    height:500px;
-    background-image: url('../../assets/hero.jpg');
-    background-size: cover;
-    background-position: center;
-  }
+  background-image: url('../../assets/hero.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+.jumbotron-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.jumbotron-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

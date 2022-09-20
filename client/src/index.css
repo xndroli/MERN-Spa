@@ -157,6 +157,33 @@ input:focus {
   margin-right: auto;
 }
 
+.section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: var(--primary-color);
+}
+
+.secondary-border {
+  border-color: var(--tertiary-color);
+}
+
+.intro p{
+  line-height: 1.7;
+  color: var(--tertiary-color);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
