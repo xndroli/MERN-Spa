@@ -1,6 +1,6 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
+  --primary: #4a6484;
+  --secondary: #fccc8d;
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #272f32;
@@ -87,6 +87,8 @@ header a {
   color: var(--light);
 }
 
+
+
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -95,8 +97,9 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
+  margin-top: 5px;
   background-color: var(--secondary);
+  width: 50%
 }
 
 button:hover {
@@ -117,16 +120,29 @@ span[role="img"] {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 40%;
+  padding: 1rem;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 20px;
 }
 
-input {
+.text-input {
+  display: flex;
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--light);
   outline: none;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: box-shadow 0.2s;
+}
+
+.text-label {
+  color: var(--secondary);
+  padding: 1rem
 }
 
 input:focus {

@@ -5,6 +5,12 @@ export function pluralize(name, count) {
 	return name + 's';
 }
 
+export function validateEmail(email) {
+	var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(String(email).toLowerCase());
+  }
+  
+
 export function idbPromise(storeName, method, object) {
 	return new Promise((resolve, reject) => {
 		const request = window.indexedDB.open('shop-shop', 1);

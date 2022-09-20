@@ -1,7 +1,8 @@
 import React from 'react';
-import ProductList from '../components/ProductList'
-import ServiceList from '../components/ServiceList';
+
+
 import Jumbotron from '../components/Jumbotron';
+import Contact from '../components/Contact'
 import Auth from '../utils/auth'
 
 const Home = () => {
@@ -10,17 +11,11 @@ const Home = () => {
 
 	return (
 	<main>
-		<Jumbotron />
+
 		<div className='container'>
-
-			<div>
-				<ProductList/>                                                                                            
-			</div>
-
-			<div>
-				<ServiceList/>
-			</div>
+		<Jumbotron />
 		</div>
+		<Contact />
 	</main>
 		)
 };
