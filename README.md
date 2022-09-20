@@ -16,9 +16,10 @@
 
 ## Repository Link
 
-- Website and Repository can be found at:
-  [Website](herokusite.com)
-  [GitHub](https://github.com/xndroli/MERN-Spa.git)
+Website and Repository can be found at:
+
+- [Website](herokusite.com)
+- [GitHub](https://github.com/xndroli/MERN-Spa.git)
 
 ## Screenshot of Site:
 
