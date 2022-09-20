@@ -43,10 +43,31 @@ function ProductList() {
     );
   }
 
+  // function renderProducts(productsArr) {
+  //   console.log(productsArr)
+  //   let filteredArr = filterProducts(productsArr)
+  //   if (!filteredArr){
+  //     return <h2>No productsArr</h2>
+  //   }
+  //   filteredArr.map(product => {
+  //     if(!product){
+  //       return <h2>No products in productsArr</h2>
+  //     } 
+  //       return <ProductItem
+  //         key={product._id}
+  //         _id={product._id}
+  //         image={product.image}
+  //         name={product.name}
+  //         price={product.price}
+  //         quantity={product.quantity}
+  //         />
+      
+  //   })
+  // }
   return (
     <div className="my-2">
       <h2>Our Products:</h2>
-      {state.products.length ? (
+      {state.products ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
             <ProductItem

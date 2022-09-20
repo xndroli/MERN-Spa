@@ -41,19 +41,29 @@ function CategoryMenu() {
     });
   };
 
-  return (
-    <div>
-      <h2>Choose a Category:</h2>
-      {categories.map((item) => (
-        <button
+  const renderCategories = (categoriesArr) => {
+    if(!categoriesArr) {
+      return <h2>No categoriesArr</h2>
+    }
+    categoriesArr.map(item => {
+      if(!item) {
+        return <p>No categories to display</p>
+      } else {
+        return <button
           key={item._id}
-          onClick={() => {
-            handleClick(item._id);
-          }}
+          onclick={() => {
+          handleClick(item._id);
+        }}
         >
           {item.name}
         </button>
-      ))}
+      }
+    })
+  }
+  return (
+    <div>
+      <h2>Choose a Category:</h2>
+      {renderCategories(categories)}
     </div>
   );
 }

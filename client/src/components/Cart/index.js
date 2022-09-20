@@ -34,10 +34,10 @@ const Cart = () => {
 			});
 		}
 
-		if (!state.cart.length) {
+		if (!state.cart) {
 			getCart();
 		}
-	}, [state.cart.length]);
+	}, [state.cart, dispatch]);
 
 	function toggleCart() {
 		dispatch({ type: TOGGLE_CART });
@@ -76,13 +76,26 @@ const Cart = () => {
 	}
 	console.log('state cart', state.cart);
 
+	// function renderCartItem(){
+	// 	if(!state.cart.length) {
+	// 		return <h2>No cartArr</h2>
+	// 	}
+	// 	state.cart.map(item => {
+	// 		if(!item){
+	// 			return <h2>No items in cartArr</h2>
+	// 		} else {
+	// 			return <CartItem key={item._id} item={item} />
+	// 		}
+	// 	})
+	// }
+
 	return (
 		<div className="cart">
 			<div className="close" onClick={toggleCart}>
 				[close]
 			</div>
 			<h2>Shopping Cart</h2>
-			{state.cart.length ? (
+			{state.cart ? (
 				<div>
 					{state.cart.map((item) => (
 						<CartItem key={item._id} item={item} />
