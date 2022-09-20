@@ -64,7 +64,7 @@ function Nav() {
       <h1>
         <Link to="/">
           <span role="img" aria-label="shopping bag">🛍️</span>
-          MERN spa
+          MERN Spa
         </Link>
       </h1>
 

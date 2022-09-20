@@ -6,9 +6,10 @@ function Jumbotron({ children }) {
   return (
     <div
       className="jumbotron"
-      style={{ height: 560, clear: "both", paddingTop: 120, textAlign: "center" }}
     >
       {children}
+      <h2>Welcome to the MERN Spa!</h2>
+      <p>Have a look around to see what we're about</p>
     </div>
   );
 }

@@ -13,9 +13,16 @@ const Home = () => {
 	<main>
 
 		<div className='container'>
-		<Jumbotron />
+			<Jumbotron />
 		</div>
-		<Contact />
+		<div>
+			<h2>Our Philosophy</h2>
+			<p>Search through our products and services to learn about the different aspects of the MERN stack.</p>
+		</div>
+		<div>
+			<Contact />
+		</div>
+
 	</main>
 		)
 };
