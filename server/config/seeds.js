@@ -18,7 +18,7 @@ db.once("open", async () => {
       name: "Mongoose Massage",
       description:
         "A 60 minute massage where you get to learn all about MongoDB",
-      image: "cookie-tin.jpg",
+      image: "mongoosemassage.jpg",
       category: categories[1]._id,
       price: 20,000.00,
       quantity: 500,
@@ -26,7 +26,7 @@ db.once("open", async () => {
     {
       name: "Express Eyebrow Wax",
       description: "Efficient and effective eyebrow wax",
-      image: "canned-coffee.jpg",
+      image: "expresseyebrowwax.jpg",
       category: categories[1]._id,
       price: 12,000.00,
       quantity: 500,
@@ -35,7 +35,7 @@ db.once("open", async () => {
       name: "React Rejuvenating Facial",
       category: categories[1]._id,
       description: "A facial to relax and rejuvenate",
-      image: "toilet-paper.jpg",
+      image: "reactfacial.jpg",
       price: 10,000.00,
       quantity: 500,
     },
@@ -44,7 +44,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.",
-      image: "soap.jpg",
+      image: "manicure.jpg",
       price: 9,000.00,
       quantity: 500,
     },
@@ -53,7 +53,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.",
-      image: "wooden-spoons.jpg",
+      image: "pedicure.jpeg",
       price: 9,000.00,
       quantity: 500,
     },
@@ -66,7 +66,7 @@ db.once("open", async () => {
       name: "Cleanser",
       description:
         "Wash your face",
-      image: "cookie-tin.jpg",
+      image: "cleanser.jpg",
       category: categories[0]._id,
       price: 2.99,
       quantity: 500,
@@ -75,7 +75,7 @@ db.once("open", async () => {
       name: "Toner",
       description:
         "Who really knows what a toner does?",
-      image: "canned-coffee.jpg",
+      image: "toner.jpg",
       category: categories[0]._id,
       price: 1.99,
       quantity: 500,
@@ -85,7 +85,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description:
         "Because your face is dry",
-      image: "toilet-paper.jpg",
+      image: "moisturizer.jpg",
       price: 7.99,
       quantity: 20,
     },
@@ -94,7 +94,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description:
         "Like a moisturizer, but liquid",
-      image: "soap.jpg",
+      image: "serum.jpg",
       price: 3.99,
       quantity: 50,
     },
@@ -103,7 +103,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description:
         "Because we didn't get enough masks in 2020",
-      image: "wooden-spoons.jpg",
+      image: "facemask.jpg",
       price: 14.99,
       quantity: 100,
     },
@@ -112,7 +112,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description:
         "Who needs to shower?",
-      image: "camera.jpg",
+      image: "fragrance.jpg",
       price: 399.99,
       quantity: 30,
     },
