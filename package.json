@@ -1,5 +1,5 @@
 {
-	"name": "mern-spa-store",
+	"name": "mern-shopping1",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server/server.js",
@@ -11,17 +11,9 @@
 		"build": "cd client && npm run build"
 	},
 	"keywords": [],
-	"author": "ctrl-alt-elite",
+	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"concurrently": "^5.1.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/xndroli/MERN-Spa.git"
-	},
-	"bugs": {
-		"url": "https://github.com/xndroli/MERN-Spa/issues"
-	},
-	"homepage": "https://github.com/xndroli/MERN-Spa#readme"
+	}
 }

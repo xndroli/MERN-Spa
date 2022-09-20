@@ -16,22 +16,25 @@ function ServiceList() {
 
 	useEffect(() => {
 		if (data) {
+			console.log('data is here', data);
 			dispatch({
 				type: UPDATE_SERVICES,
 				services: data.services,
 			});
-			data.services.forEach((service) => {
-				idbPromise('services', 'put', service);
-			});
-		} else if (!loading) {
-			idbPromise('services', 'get').then((services) => {
-				dispatch({
-					type: UPDATE_SERVICES,
-					services: services,
-				});
-			});
+			// data.services.forEach((service) => {
+			// 	idbPromise('services', 'put', service);
+			// });
 		}
-	}, [data, loading, dispatch]);
+		// else if (!loading) {
+		// 	console.log('data', data);
+		// 	idbPromise('services', 'get').then((services) => {
+		// 		dispatch({
+		// 			type: UPDATE_SERVICES,
+		// 			services: services,
+		// 		});
+		// 	});
+		// }
+	}, [data, loading]);
 
 	function filterServices() {
 		if (!currentCategory) {
