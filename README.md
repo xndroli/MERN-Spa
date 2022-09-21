@@ -54,7 +54,7 @@ Our project will fulfill the following requirements:
 
 Finally, we must add our project to our individual portfolio's.
 
-[See Deployed Application]()
+[See Deployed Application](https://fathomless-temple-22058.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +106,7 @@ The following animation shows how a user can register using the Signup page and 
 
 [![The Redux Store: E-Commerce Platform ](./client/public/images/reduxStore-demo-01.gif)](https://github.com/xndroli/MERN-Spa/)
 
-[See Deployed Application]()
+[See Deployed Application](https://fathomless-temple-22058.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,7 +134,7 @@ Install the package, and any packages that it depends on by running:
 
 Run the following command at the root of your project:
 
-`npm start`
+`npm run start`
 
 If you have nodemon:
 
