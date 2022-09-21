@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.css';
 //import Modal from '../Modal';
 
@@ -92,7 +92,7 @@ const PhotoList = () => {
 		if (slidePosition > slides.length) {
 			slidePosition = 1;
 		}
-		setTimeout(SlideShow, 2000); // Change image every 2 seconds
+		setTimeout(SlideShow, 3500); // Change image every 2 seconds
 	}
 
 	return (
@@ -102,28 +102,34 @@ const PhotoList = () => {
 				<div className="slideshow-container fade">
 					{/* <!-- Full images with numbers and message Info --> */}
 					<div className="Containers">
+						<Link to="/services">
 							<img
 								src={'../Images/mongoosemassage.jpg'}
 								style={{ width: '100%' }}
 								alt="mongoose massage"
 							></img>
-						<div className="Info">Mongoose Massage</div>
+							<div className="Info">Mongoose Massage</div>
+						</Link>
 					</div>
 					<div className="Containers">
+						<Link to="/services">
 							<img
 								src={'../Images/expresseyebrowwax.jpg'}
 								style={{ width: '100%' }}
 								alt="express eyebrow wax"
 							></img>
-						<div className="Info">Express Eyebrow Wax</div>
+							<div className="Info">Express Eyebrow Wax</div>
+						</Link>
 					</div>
 					<div className="Containers">
-						<img
-							src={'../Images/reactfacial.jpg'}
-							style={{ width: '100%' }}
-							alt="react facial"
-						></img>
-						<div className="Info">React Facial</div>
+						<Link to="/services">
+							<img
+								src={'../Images/reactfacial.jpg'}
+								style={{ width: '100%' }}
+								alt="react facial"
+							></img>
+							<div className="Info">React Facial</div>
+						</Link>
 					</div>
 					{/* <!-- Back and forward buttons -->
 					<Link className="Back" onClick={() => plusSlides(-1)} />

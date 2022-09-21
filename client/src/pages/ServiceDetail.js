@@ -5,7 +5,7 @@ import { useQuery } from '@apollo/client';
 import Cart from '../components/Cart';
 import { useStoreContext } from '../utils/GlobalState';
 import {
-	REMOVE_FROM_CART,
+	//REMOVE_FROM_CART,
 	UPDATE_CART_QUANTITY,
 	ADD_TO_CART,
 	UPDATE_SERVICES,
@@ -72,40 +72,39 @@ function ServiceDetail() {
 		}
 	};
 
-	const removeFromCart = () => {
-		dispatch({
-			type: REMOVE_FROM_CART,
-			_id: currentService._id,
-		});
+	// const removeFromCart = () => {
+	// 	dispatch({
+	// 		type: REMOVE_FROM_CART,
+	// 		_id: currentService._id,
+	// 	});
 
-		idbPromise('cart', 'delete', { ...currentService });
-	};
+	// 	idbPromise('cart', 'delete', { ...currentService });
+	// };
 
 	return (
 		<>
 			{currentService && cart ? (
-				<div className="container my-1">
-					<Link to="/">← Back to Services</Link>
+				<div className="detailedView my-1">
+					<Link to="/services">← Back to Services</Link>
 
-					<h2>{currentService.name}</h2>
+					<h2 className='detailed-title'>{currentService.name}</h2>
 
-					<p>{currentService.description}</p>
+					
+					<div className='detailedImgContainer'>
+						<img className='detailedImg'
+							src={`/images/${currentService.image}`}
+							alt={currentService.name}
+						/>
+					</div>
 
-					<p>
+					<div className='description'>
+						<p>{currentService.description}</p>
+					</div>
+
+					<div className='detailedFooter'>
 						<strong>Price:</strong>${currentService.price}{' '}
 						<button onClick={addToCart}>Add to Cart</button>
-						<button
-							disabled={!cart.find((p) => p._id === currentService._id)}
-							onClick={removeFromCart}
-						>
-							Remove from Cart
-						</button>
-					</p>
-
-					<img
-						src={`/images/${currentService.image}`}
-						alt={currentService.name}
-					/>
+					</div>
 				</div>
 			) : null}
 			{loading ? <img src={spinner} alt="loading" /> : null}

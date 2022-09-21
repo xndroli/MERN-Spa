@@ -90,6 +90,7 @@ header a {
 
 
 button {
+  color: var(--light);
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -98,7 +99,7 @@ button {
   outline: none;
   cursor: pointer;
   margin-top: 5px;
-  background-color: var(--secondary);
+  background-color: var(--dark);
   width: 50%
 }
 
@@ -278,6 +279,70 @@ input:focus {
   margin: 10px;
   width: 25%;
   text-align: center;
+}
+
+.card-info{
+  border-radius: 10px;
+  padding: 2%;
+  width: 100%;
+  background-color: rgba(39, 47, 50, .4);
+}
+
+.card img{
+  border-radius: 15px;
+}
+
+.card-btn{
+  margin-top: 20px;
+}
+
+.detailedView {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.detailedImgContainer {
+  width: 90%;
+  background-color: var(--primary);
+  border-radius: 60px;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.detailedImg{
+  width: 100%;
+  border-radius: 30px;
+}
+
+.detailedFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  border-radius: 60px;
+  padding: 20px;
+  margin: 10px;
+  width: 75%;
+  text-align: center;
+}
+
+.detailed-title{
+  font-size: 48px;
+  border-top: 3px solid;
+  color: var(--secondary-color);
+  padding-top: 10px;
+  text-align: center;
+  margin: 5%;
+  width: 50%;
+}
+
+.description{
+  margin: 10px;
 }
 
 .error-text {

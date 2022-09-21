@@ -53,7 +53,7 @@ db.once('open', async () => {
 			category: categories[1]._id,
 			description:
 				'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-			image: 'pedicure.jpeg',
+			image: 'pedicure.jpg',
 			price: 9000.0,
 			quantity: 500,
 		},
