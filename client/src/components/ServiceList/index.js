@@ -69,7 +69,7 @@ function ServiceList() {
 
 	return (
 		<div className="my-2">
-			<h2>Our services:</h2>
+			<h2 className='section-title'>Our services:</h2>
 			{state.services ? (
 				<div className="flex-row">
 					{filterServices().map((service) => (

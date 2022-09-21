@@ -156,7 +156,7 @@ form {
 }
 
 .text-label {
-  color: var(--secondary);
+  color: var(--light);
   padding: 1rem
 }
 
@@ -300,6 +300,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
   align-items: center;
 }
 

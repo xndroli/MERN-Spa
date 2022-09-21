@@ -65,8 +65,8 @@ function ProductList() {
   //   })
   // }
   return (
-    <div className="my-2 container">
-      <h2>Our Products:</h2>
+    <div className="detailedView">
+      <h2 className='section-title'>Our Products:</h2>
       {state.products ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
