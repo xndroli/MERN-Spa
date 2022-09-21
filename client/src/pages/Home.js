@@ -17,18 +17,19 @@ const Home = () => {
 			<div className="intro">
 				<h2 className="section-title">Our Philosophy</h2>
 				<p>
-					Search through our products and services to learn about the different
-					aspects of the MERN stack.
+					Our belief is that there's no stack better than the MERN stack, and we have the services to prove it. Check out our services below to get an idea of what we offer. Also remember to view our products to work out the knots in your app.
 				</p>
 			</div>
 			<div className="slideshow">
 				<h2 className="section-title">Our Services</h2>
-				<p></p>
+
 				<Gallery />
 			</div>
 			<footer className="footer">
-				<h2 className="">Brought to you by MERN Spa</h2>
 				<Contact />
+				<div className="footer-title">
+				<h4>Brought to you by the good folks at MERN Spa</h4>
+				</div>
 			</footer>
 		</main>
 	);

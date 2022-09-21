@@ -60,9 +60,9 @@ function ContactForm() {
 	//only show error message if it has a message in it
 	return (
 		<section className="form">
-			<h1 data-testid="h1tag">Contact me</h1>
+			<h1 data-testid="h1tag" className='section-title'>Contact me</h1>
 			<form id="contact-form" onSubmit={handleSubmit}>
-				<div>
+				<div className='text-input'>
 					<label className="text-label" htmlFor="name">
 						Name:
 					</label>
@@ -74,9 +74,9 @@ function ContactForm() {
 						onBlur={handleChange}
 					/>
 				</div>
-				<div>
+				<div className='text-input'>
 					<label className="text-label" htmlFor="email">
-						Email address:
+						Email:
 					</label>
 					<input
 						className="text-input"
@@ -86,14 +86,14 @@ function ContactForm() {
 						onBlur={handleChange}
 					/>
 				</div>
-				<div>
+				<div className='text-input'>
 					<label className="text-label" htmlFor="message">
 						Message:
 					</label>
 					<textarea
 						className="text-input"
 						name="message"
-						rows="5"
+						rows="2"
 						defaultValue={message}
 						onBlur={handleChange}
 					/>

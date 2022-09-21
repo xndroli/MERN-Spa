@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import './style.css';
 //import Modal from '../Modal';
 
@@ -68,15 +68,15 @@ const PhotoList = () => {
 	var slidePosition = 0;
 	SlideShow(slidePosition);
 
-	// forward/Back controls
-	function plusSlides(n) {
-		SlideShow((slidePosition += n));
-	}
+	// // forward/Back controls
+	// function plusSlides(n) {
+	// 	SlideShow((slidePosition += n));
+	// }
 
-	//  images controls
-	function currentSlide(n) {
-		SlideShow((slidePosition = n));
-	}
+	// //  images controls
+	// function currentSlide(n) {
+	// 	SlideShow((slidePosition = n));
+	// }
 
 	// var slidePosition = 1;
 	// SlideShow();
@@ -102,46 +102,43 @@ const PhotoList = () => {
 				<div className="slideshow-container fade">
 					{/* <!-- Full images with numbers and message Info --> */}
 					<div className="Containers">
-						<div className="MessageInfo">1 / 3</div>
-						<img
-							src={'../Images/mongoosemassage.jpg'}
-							style={{ width: '100%' }}
-							alt=""
-						></img>
-						<div className="Info">Node Nails- Pedicure</div>
+							<img
+								src={'../Images/mongoosemassage.jpg'}
+								style={{ width: '100%' }}
+								alt="mongoose massage"
+							></img>
+						<div className="Info">Mongoose Massage</div>
 					</div>
 					<div className="Containers">
-						<div className="MessageInfo">2 / 3</div>
-						<img
-							src={'../Images/expresseyebrowwax.jpg'}
-							style={{ width: '100%' }}
-							alt=""
-						></img>
-						<div className="Info">Node Nails- Pedicure</div>
+							<img
+								src={'../Images/expresseyebrowwax.jpg'}
+								style={{ width: '100%' }}
+								alt="express eyebrow wax"
+							></img>
+						<div className="Info">Express Eyebrow Wax</div>
 					</div>
 					<div className="Containers">
-						<div className="MessageInfo">3 / 3</div>
 						<img
 							src={'../Images/reactfacial.jpg'}
 							style={{ width: '100%' }}
-							alt=""
+							alt="react facial"
 						></img>
-						<div className="Info">Node Nails- Pedicure</div>
+						<div className="Info">React Facial</div>
 					</div>
-					{/* <!-- Back and forward buttons --> */}
+					{/* <!-- Back and forward buttons -->
 					<Link className="Back" onClick={() => plusSlides(-1)} />
 					&#10094;
 					<Link className="forward" onClick={() => plusSlides(1)} />
-					&#10095;
+					&#10095; */}
 				</div>
 				<br />
 
 				{/* <!-- The circles/dots --> */}
-				<div style={{ textAlign: 'center' }}>
-					<span className="dots" onClick={() => currentSlide(1)}></span>
-					<span className="dots" onClick={() => currentSlide(2)}></span>
-					<span className="dots" onClick={() => currentSlide(3)}></span>
-				</div>
+				{/* <div style={{ textAlign: 'center' }}>
+					<span className="dots" onClick={currentSlide(1)}></span>
+					<span className="dots" onClick={currentSlide(2)}></span>
+					<span className="dots" onClick={currentSlide(3)}></span>
+				</div> */}
 				{/* {isModalOpen && (
 				<Modal onClose={toggleModal} currentPhoto={currentPhoto} />
 			)} */}

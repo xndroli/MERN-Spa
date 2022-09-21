@@ -4,7 +4,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-	max-width: 1000px;
+	max-width: 90%;
 	position: relative;
 	margin: auto;
 }
@@ -12,6 +12,10 @@
 /* Make the images invisible by default */
 .Containers {
 	display: none;
+}
+
+.Containers img {
+	object-fit: cover;
 }
 
 /* forward & Back buttons */
@@ -45,11 +49,12 @@
 
 /* Caption Info */
 .Info {
-	color: #e3e3e3;
+	background-color: var(--dark);
+	color: var(--primary);
 	font-size: 16px;
 	padding: 10px 14px;
 	position: absolute;
-	bottom: 10px;
+	bottom: 1px;
 	width: 100%;
 	text-align: center;
 }
