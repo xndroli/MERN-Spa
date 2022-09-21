@@ -118,7 +118,6 @@ db.once('open', async () => {
 	await User.create({
 		username: 'PamWash',
 		firstName: 'Pamela',
-		lastName: 'Washington',
 		email: 'pamela@realmail.com',
 		password: 'password12345',
 		orders: [
@@ -131,7 +130,6 @@ db.once('open', async () => {
 	await User.create({
 		username: 'PamWash2',
 		firstName: 'Elijah',
-		lastName: 'Holt',
 		email: 'eholt@fakemail.com',
 		password: 'password12345',
 	});
@@ -141,7 +139,6 @@ db.once('open', async () => {
 	await User.create({
 		username: 'PamWash3',
 		firstName: 'Pamela',
-		lastName: 'Washington',
 		email: 'pamela@testmail.com',
 		password: 'password12345',
 		orders: [
@@ -155,7 +152,6 @@ db.once('open', async () => {
 	await User.create({
 		username: 'PamWash4',
 		firstName: 'Elijah',
-		lastName: 'Holt',
 		email: 'eholt@testmail.com',
 		password: 'password12345',
 	});
