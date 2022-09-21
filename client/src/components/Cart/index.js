@@ -29,8 +29,7 @@ const Cart = () => {
 			const cart = await idbPromise('cart', 'get');
 			dispatch({
 				type: ADD_MULTIPLE_TO_CART,
-				products: [...cart],
-				services: [...cart],
+				products: [...cart]
 			});
 		}
 
