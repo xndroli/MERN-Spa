@@ -92,21 +92,21 @@ Application includes user authentication using JWT.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🎞️ Presentation <a name = "presentation"></a>
-
-- [Link to Project Presentation](https://docs.google.com/presentation/d/1kofkwGUMe4LGkXOpG_4CXkBaLredQEwytVI74SukCiE/edit?usp=sharing)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🖥️ Demo <a name = "demo"></a>
 
 This section reviews the web application's general appearance and functionality.
 
 The following animation shows how a user can register using the Signup page and then navigate to the Products page:
 
-[![The Redux Store: E-Commerce Platform ](./client/public/images/reduxStore-demo-01.gif)](https://github.com/xndroli/MERN-Spa/)
+[![The Redux Store: E-Commerce Platform ](./client/public/images/mern_spa.png)](https://github.com/xndroli/MERN-Spa/)
 
 [See Deployed Application](https://fathomless-temple-22058.herokuapp.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎞️ Presentation <a name = "presentation"></a>
+
+- [Link to Project Presentation](https://docs.google.com/presentation/d/1kofkwGUMe4LGkXOpG_4CXkBaLredQEwytVI74SukCiE/edit?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
