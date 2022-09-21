@@ -130,10 +130,16 @@ form {
   align-items:center;
   justify-content: space-around;
   width: 75%;
-  padding: 4rem;
+  padding: 2rem;
   background-color: var(--primary);
   border: 2px solid var(--primary);
   border-radius: 20px;
+}
+
+.form-header{
+  padding-bottom: 5%;
+  justify-content: center;
+  width: 100%
 }
 
 .text-input {

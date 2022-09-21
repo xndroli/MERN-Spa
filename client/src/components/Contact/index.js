@@ -60,8 +60,11 @@ function ContactForm() {
 	//only show error message if it has a message in it
 	return (
 		<section className="form">
-			<h1 data-testid="h1tag" className='section-title'>Contact me</h1>
+			<h2 data-testid="h1tag" className='section-title'>Reach Out</h2>
 			<form id="contact-form" onSubmit={handleSubmit}>
+				<div>
+					<h4 className='form-header'>Send us a message!</h4>
+				</div>
 				<div className='text-input'>
 					<label className="text-label" htmlFor="name">
 						Name:

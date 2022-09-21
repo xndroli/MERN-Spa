@@ -13,7 +13,7 @@
 	background-image: url('../../assets/hero.jpg');
 	background-size: cover;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	background-attachment: fixed;
@@ -22,10 +22,13 @@
 }
 
 .jumbotron-cta {
-	width: 35%;
-	text-align: right;
+  border: 3px solid var(--dark);
+  border-radius: 15px;
+	width: 60%;
+	text-align: center;
 	margin: 3.5%;
-	color: var(--primary-color);
+  background-color: rgba(39, 47, 50, .6);
+	color: rgba(140, 162, 189, 1);
 	font-size: 18px;
 	line-height: 1.2;
 }
