@@ -94,7 +94,7 @@ Application includes user authentication using JWT.
 
 ## 🎞️ Presentation <a name = "presentation"></a>
 
-- [![Link to Project Presentation](https://docs.google.com/presentation/d/1kofkwGUMe4LGkXOpG_4CXkBaLredQEwytVI74SukCiE/edit?usp=sharing)]
+- [Link to Project Presentation](https://docs.google.com/presentation/d/1kofkwGUMe4LGkXOpG_4CXkBaLredQEwytVI74SukCiE/edit?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
